@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-06-16T01:57:41Z",
+  "tournament": "2026 FIFA World Cup",
+  "source": "cross-verified by reconcile.py (ESPN + TheSportsDB)",
+  "teams": [
+    {
+      "code": "KR",
+      "nameKo": "대한민국",
+      "nameEn": "South Korea",
+      "flag": "🇰🇷",
+      "group": "A",
+      "record": {
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 2,
+        "ga": 1,
+        "pts": 3
+      },
+      "matches": [
+        {
+          "opponentKo": "체코",
+          "opponentEn": "Czechia",
+          "opponentFlag": "🇨🇿",
+          "kickoffUtc": "2026-06-12T02:00:00Z",
+          "venue": "Estadio Akron, Zapopan",
+          "status": "finished",
+          "scoreFor": 2,
+          "scoreAgainst": 1,
+          "result": "W"
+        },
+        {
+          "opponentKo": "멕시코",
+          "opponentEn": "Mexico",
+          "opponentFlag": "🇲🇽",
+          "kickoffUtc": "2026-06-19T01:00:00Z",
+          "venue": "Estadio Akron, Zapopan",
+          "status": "scheduled",
+          "scoreFor": null,
+          "scoreAgainst": null,
+          "result": null
+        },
+        {
+          "opponentKo": "남아공",
+          "opponentEn": "South Africa",
+          "opponentFlag": "🇿🇦",
+          "kickoffUtc": "2026-06-25T01:00:00Z",
+          "venue": "Estadio BBVA, Guadalupe",
+          "status": "scheduled",
+          "scoreFor": null,
+          "scoreAgainst": null,
+          "result": null
+        }
+      ]
+    },
+    {
+      "code": "JP",
+      "nameKo": "일본",
+      "nameEn": "Japan",
+      "flag": "🇯🇵",
+      "group": "F",
+      "record": {
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 2,
+        "ga": 2,
+        "pts": 1
+      },
+      "matches": [
+        {
+          "opponentKo": "네덜란드",
+          "opponentEn": "Netherlands",
+          "opponentFlag": "🇳🇱",
+          "kickoffUtc": "2026-06-14T20:00:00Z",
+          "venue": "AT&T Stadium, Arlington",
+          "status": "finished",
+          "scoreFor": 2,
+          "scoreAgainst": 2,
+          "result": "D"
+        },
+        {
+          "opponentKo": "튀니지",
+          "opponentEn": "Tunisia",
+          "opponentFlag": "🇹🇳",
+          "kickoffUtc": "2026-06-21T04:00:00Z",
+          "venue": "Estadio BBVA, Guadalupe",
+          "status": "scheduled",
+          "scoreFor": null,
+          "scoreAgainst": null,
+          "result": null
+        },
+        {
+          "opponentKo": "스웨덴",
+          "opponentEn": "Sweden",
+          "opponentFlag": "🇸🇪",
+          "kickoffUtc": "2026-06-25T23:00:00Z",
+          "venue": "AT&T Stadium, Arlington",
+          "status": "scheduled",
+          "scoreFor": null,
+          "scoreAgainst": null,
+          "result": null
+        }
+      ]
+    }
+  ],
+  "groups": {
+    "A": [
+      {
+        "played": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 2,
+        "ga": 0,
+        "pts": 3,
+        "rank": 1,
+        "nameKo": "멕시코",
+        "nameEn": "Mexico",
+        "flag": "🇲🇽"
+      },
+      {
+        "played": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 2,
+        "ga": 1,
+        "pts": 3,
+        "rank": 2,
+        "nameKo": "대한민국",
+        "nameEn": "South Korea",
+        "flag": "🇰🇷"
+      },
+      {
+        "played": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 1,
+        "ga": 2,
+        "pts": 0,
+        "rank": 3,
+        "nameKo": "체코",
+        "nameEn": "Czechia",
+        "flag": "🇨🇿"
+      },
+      {
+        "played": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 0,
+        "ga": 2,
+        "pts": 0,
+        "rank": 4,
+        "nameKo": "남아공",
+        "nameEn": "South Africa",
+        "flag": "🇿🇦"
+      }
+    ],
+    "F": [
+      {
+        "played": 1,
+        "w": 1,
+        "d": 0,
+        "l": 0,
+        "gf": 5,
+        "ga": 1,
+        "pts": 3,
+        "rank": 1,
+        "nameKo": "스웨덴",
+        "nameEn": "Sweden",
+        "flag": "🇸🇪"
+      },
+      {
+        "played": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 2,
+        "ga": 2,
+        "pts": 1,
+        "rank": 2,
+        "nameKo": "일본",
+        "nameEn": "Japan",
+        "flag": "🇯🇵"
+      },
+      {
+        "played": 1,
+        "w": 0,
+        "d": 1,
+        "l": 0,
+        "gf": 2,
+        "ga": 2,
+        "pts": 1,
+        "rank": 3,
+        "nameKo": "네덜란드",
+        "nameEn": "Netherlands",
+        "flag": "🇳🇱"
+      },
+      {
+        "played": 1,
+        "w": 0,
+        "d": 0,
+        "l": 1,
+        "gf": 1,
+        "ga": 5,
+        "pts": 0,
+        "rank": 4,
+        "nameKo": "튀니지",
+        "nameEn": "Tunisia",
+        "flag": "🇹🇳"
+      }
+    ]
+  }
+}
