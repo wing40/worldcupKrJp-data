@@ -1,0 +1,59 @@
+name: Publish matches.json (self-hosted engine)
+
+# 이 **공개** 레포가 직접 교차검증 엔진(reconcile.py)을 돌려 matches.json 을
+# 자기 자신에 커밋한다. 앱은 이 레포의 raw URL 을 그대로 읽는다(앱 변경 0).
+#
+# 왜 여기(공개레포)서 도나:
+#   - 공개 레포는 GitHub Actions 분이 **무료·무제한** → quota 천장 없음 → 자주 폴링 가능.
+#   - 자기 레포에 커밋하므로 내장 GITHUB_TOKEN 으로 충분 → 외부 PAT(DATA_REPO_TOKEN) 불필요.
+#   - (구) private 소스레포 → 공개레포 PAT push 구조는 폐기(quota 소진 + cron 누락으로 멈췄던 원인).
+#
+# 트리거(이중화):
+#   - schedule cron: GitHub 내부 cron은 best-effort 라 부하 시 누락된다(2026-06-19 한국전 실종 사건).
+#   - workflow_dispatch: 외부 무료 핑거(cron-job.org)가 신뢰성 있게 호출 → cron 누락을 보강.
+#
+# 발행 스킵: updatedAt(매번 바뀜) 무시하고 스코어/순위 등 실제 데이터가 바뀐 경우에만 커밋.
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"       # baseline 10분 (공개라 무료)
+    # ── 경기창 burst (UTC). GitHub cron 누락 대비 외부 핑거가 보강 ──
+    - cron: "*/5 4-7 21 6 *"     # 🇯🇵 vs 튀니지   06-21 04:00Z
+    - cron: "*/5 0-3 25 6 *"     # 🇰🇷 vs 남아공   06-25 01:00Z
+    - cron: "*/5 22-23 25 6 *"   # 🇯🇵 vs 스웨덴   06-25 23:00Z
+    - cron: "*/5 0-2 26 6 *"     # 🇯🇵 vs 스웨덴 종료분
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: reconcile → matches.json (실제 변화 있을 때만 커밋)
+        run: |
+          set -e
+          cp matches.json matches.prev.json 2>/dev/null || echo '{}' > matches.prev.json
+          python3 reconcile.py matches.json
+          if python3 -c "import json,sys; a=json.load(open('matches.prev.json')); b=json.load(open('matches.json')); a.pop('updatedAt',None); b.pop('updatedAt',None); sys.exit(0 if a==b else 1)"; then
+            echo "no real change (updatedAt만 다름) → 커밋 스킵"
+            rm -f matches.prev.json
+            exit 0
+          fi
+          rm -f matches.prev.json
+          git config user.name  "worldcupkrjp-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add matches.json
+          git commit -m "data: refresh matches.json ($(date -u +%FT%TZ))"
+          git push
