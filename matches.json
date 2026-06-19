@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-06-18T19:31:06Z",
+  "updatedAt": "2026-06-19T05:32:42Z",
   "tournament": "2026 FIFA World Cup",
   "source": "cross-verified by reconcile.py (ESPN + TheSportsDB)",
   "teams": [
@@ -13,9 +13,9 @@
       "record": {
         "w": 1,
         "d": 0,
-        "l": 0,
+        "l": 1,
         "gf": 2,
-        "ga": 1,
+        "ga": 2,
         "pts": 3
       },
       "matches": [
@@ -36,10 +36,10 @@
           "opponentFlag": "🇲🇽",
           "kickoffUtc": "2026-06-19T01:00:00Z",
           "venue": "Estadio Akron, Zapopan",
-          "status": "scheduled",
-          "scoreFor": null,
-          "scoreAgainst": null,
-          "result": null
+          "status": "finished",
+          "scoreFor": 0,
+          "scoreAgainst": 1,
+          "result": "L"
         },
         {
           "opponentKo": "남아공",
@@ -108,25 +108,25 @@
   "groups": {
     "A": [
       {
-        "played": 1,
-        "w": 1,
+        "played": 2,
+        "w": 2,
         "d": 0,
         "l": 0,
-        "gf": 2,
+        "gf": 3,
         "ga": 0,
-        "pts": 3,
+        "pts": 6,
         "rank": 1,
         "nameKo": "멕시코",
         "nameEn": "Mexico",
         "flag": "🇲🇽"
       },
       {
-        "played": 1,
+        "played": 2,
         "w": 1,
         "d": 0,
-        "l": 0,
+        "l": 1,
         "gf": 2,
-        "ga": 1,
+        "ga": 2,
         "pts": 3,
         "rank": 2,
         "nameKo": "대한민국",
