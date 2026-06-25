@@ -132,6 +132,12 @@ def fetch_espn():
     return out
 
 
+# TheSportsDB strStatus 값 중 "경기 종료"를 뜻하는 것만 finished 로 인정.
+# 라이브("1H"/"2H"/"HT"/"ET"/"P"/"BT"/"Live"…)·미시작("NS")은 점수가 있어도(0-0 등) 종료 아님.
+SDB_FINISHED = {"FT", "AET", "PEN", "AP", "MATCH FINISHED", "FINISHED",
+                "FULL TIME", "AFTER EXTRA TIME", "AFTER PENALTIES"}
+
+
 def fetch_sportsdb():
     """TheSportsDB(무료 키 '3') eventsday → 우리 8팀 경기만. 2차 교차검증용."""
     out = {}
@@ -147,6 +153,10 @@ def fetch_sportsdb():
             try:
                 c1, c2 = code_of(ev.get("strHomeTeam")), code_of(ev.get("strAwayTeam"))
                 if not c1 or not c2:
+                    continue
+                # ★ 상태를 반드시 확인 — 라이브 경기(예 2H 0-0)를 점수만 보고 종료로 발행하던 버그 방지.
+                status = (ev.get("strStatus") or "").strip().upper()
+                if status not in SDB_FINISHED:
                     continue
                 if ev.get("intHomeScore") in (None, "") or ev.get("intAwayScore") in (None, ""):
                     continue
