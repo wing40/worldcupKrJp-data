@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-06-21T07:04:52Z",
+  "updatedAt": "2026-06-25T01:10:32Z",
   "tournament": "2026 FIFA World Cup",
   "source": "cross-verified by reconcile.py (ESPN + TheSportsDB)",
   "teams": [
@@ -12,11 +12,11 @@
       "group": "A",
       "record": {
         "w": 1,
-        "d": 0,
+        "d": 1,
         "l": 1,
         "gf": 2,
         "ga": 2,
-        "pts": 3
+        "pts": 4
       },
       "matches": [
         {
@@ -47,10 +47,10 @@
           "opponentFlag": "🇿🇦",
           "kickoffUtc": "2026-06-25T01:00:00Z",
           "venue": "Estadio BBVA, Guadalupe",
-          "status": "scheduled",
-          "scoreFor": null,
-          "scoreAgainst": null,
-          "result": null
+          "status": "finished",
+          "scoreFor": 0,
+          "scoreAgainst": 0,
+          "result": "D"
         }
       ]
     },
