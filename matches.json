@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-06-26T00:55:20Z",
+  "updatedAt": "2026-06-26T01:00:41Z",
   "tournament": "2026 FIFA World Cup",
   "source": "cross-verified by reconcile.py (ESPN + TheSportsDB)",
   "teams": [
@@ -62,11 +62,11 @@
       "group": "F",
       "record": {
         "w": 1,
-        "d": 1,
+        "d": 2,
         "l": 0,
-        "gf": 6,
-        "ga": 2,
-        "pts": 4
+        "gf": 7,
+        "ga": 3,
+        "pts": 5
       },
       "matches": [
         {
@@ -97,10 +97,10 @@
           "opponentFlag": "🇸🇪",
           "kickoffUtc": "2026-06-25T23:00:00Z",
           "venue": "AT&T Stadium, Arlington",
-          "status": "scheduled",
-          "scoreFor": null,
-          "scoreAgainst": null,
-          "result": null
+          "status": "finished",
+          "scoreFor": 1,
+          "scoreAgainst": 1,
+          "result": "D"
         }
       ]
     }
@@ -175,26 +175,26 @@
         "flag": "🇳🇱"
       },
       {
-        "played": 2,
+        "played": 3,
         "w": 1,
-        "d": 1,
+        "d": 2,
         "l": 0,
-        "gf": 6,
-        "ga": 2,
-        "pts": 4,
+        "gf": 7,
+        "ga": 3,
+        "pts": 5,
         "rank": 2,
         "nameKo": "일본",
         "nameEn": "Japan",
         "flag": "🇯🇵"
       },
       {
-        "played": 2,
+        "played": 3,
         "w": 1,
-        "d": 0,
+        "d": 1,
         "l": 1,
-        "gf": 6,
-        "ga": 6,
-        "pts": 3,
+        "gf": 7,
+        "ga": 7,
+        "pts": 4,
         "rank": 3,
         "nameKo": "스웨덴",
         "nameEn": "Sweden",
