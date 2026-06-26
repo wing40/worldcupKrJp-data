@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-06-25T03:00:44Z",
+  "updatedAt": "2026-06-26T00:55:20Z",
   "tournament": "2026 FIFA World Cup",
   "source": "cross-verified by reconcile.py (ESPN + TheSportsDB)",
   "teams": [
@@ -162,13 +162,13 @@
     ],
     "F": [
       {
-        "played": 2,
-        "w": 1,
+        "played": 3,
+        "w": 2,
         "d": 1,
         "l": 0,
-        "gf": 7,
-        "ga": 3,
-        "pts": 4,
+        "gf": 10,
+        "ga": 4,
+        "pts": 7,
         "rank": 1,
         "nameKo": "네덜란드",
         "nameEn": "Netherlands",
@@ -201,12 +201,12 @@
         "flag": "🇸🇪"
       },
       {
-        "played": 2,
+        "played": 3,
         "w": 0,
         "d": 0,
-        "l": 2,
-        "gf": 1,
-        "ga": 9,
+        "l": 3,
+        "gf": 2,
+        "ga": 12,
         "pts": 0,
         "rank": 4,
         "nameKo": "튀니지",
