@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-11T06:05:22Z",
+  "updatedAt": "2026-07-11T23:05:29Z",
   "tournament": "2026 FIFA World Cup",
   "source": "cross-verified by reconcile.py (ESPN + TheSportsDB)",
   "teams": [
@@ -108,25 +108,25 @@
   "groups": {
     "A": [
       {
-        "played": 3,
-        "w": 3,
+        "played": 2,
+        "w": 2,
         "d": 0,
         "l": 0,
-        "gf": 6,
+        "gf": 4,
         "ga": 0,
-        "pts": 9,
+        "pts": 6,
         "rank": 1,
         "nameKo": "멕시코",
         "nameEn": "Mexico",
         "flag": "🇲🇽"
       },
       {
-        "played": 3,
+        "played": 2,
         "w": 1,
         "d": 1,
-        "l": 1,
+        "l": 0,
         "gf": 2,
-        "ga": 3,
+        "ga": 1,
         "pts": 4,
         "rank": 2,
         "nameKo": "남아공",
@@ -134,30 +134,30 @@
         "flag": "🇿🇦"
       },
       {
-        "played": 3,
-        "w": 1,
-        "d": 0,
-        "l": 2,
-        "gf": 2,
-        "ga": 3,
-        "pts": 3,
-        "rank": 3,
-        "nameKo": "대한민국",
-        "nameEn": "South Korea",
-        "flag": "🇰🇷"
-      },
-      {
-        "played": 3,
+        "played": 2,
         "w": 0,
         "d": 1,
-        "l": 2,
-        "gf": 2,
-        "ga": 6,
+        "l": 1,
+        "gf": 1,
+        "ga": 4,
         "pts": 1,
-        "rank": 4,
+        "rank": 3,
         "nameKo": "체코",
         "nameEn": "Czechia",
         "flag": "🇨🇿"
+      },
+      {
+        "played": 2,
+        "w": 0,
+        "d": 0,
+        "l": 2,
+        "gf": 0,
+        "ga": 2,
+        "pts": 0,
+        "rank": 4,
+        "nameKo": "대한민국",
+        "nameEn": "South Korea",
+        "flag": "🇰🇷"
       }
     ],
     "F": [
