@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-11T23:10:51Z",
+  "updatedAt": "2026-07-17T06:30:47Z",
   "tournament": "2026 FIFA World Cup",
   "source": "cross-verified by reconcile.py (ESPN + TheSportsDB)",
   "teams": [
@@ -163,42 +163,42 @@
     "F": [
       {
         "played": 3,
-        "w": 2,
-        "d": 1,
-        "l": 0,
-        "gf": 10,
-        "ga": 4,
-        "pts": 7,
-        "rank": 1,
-        "nameKo": "네덜란드",
-        "nameEn": "Netherlands",
-        "flag": "🇳🇱"
-      },
-      {
-        "played": 3,
         "w": 1,
         "d": 2,
         "l": 0,
         "gf": 7,
         "ga": 3,
         "pts": 5,
-        "rank": 2,
+        "rank": 1,
         "nameKo": "일본",
         "nameEn": "Japan",
         "flag": "🇯🇵"
       },
       {
-        "played": 3,
+        "played": 2,
         "w": 1,
         "d": 1,
-        "l": 1,
-        "gf": 7,
-        "ga": 7,
+        "l": 0,
+        "gf": 6,
+        "ga": 2,
         "pts": 4,
-        "rank": 3,
+        "rank": 2,
         "nameKo": "스웨덴",
         "nameEn": "Sweden",
         "flag": "🇸🇪"
+      },
+      {
+        "played": 2,
+        "w": 1,
+        "d": 1,
+        "l": 0,
+        "gf": 5,
+        "ga": 3,
+        "pts": 4,
+        "rank": 3,
+        "nameKo": "네덜란드",
+        "nameEn": "Netherlands",
+        "flag": "🇳🇱"
       },
       {
         "played": 3,
