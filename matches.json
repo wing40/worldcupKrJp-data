@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-24T11:04:26Z",
+  "updatedAt": "2026-07-24T11:08:47Z",
   "tournament": "2026 FIFA World Cup",
   "source": "cross-verified by reconcile.py (ESPN + TheSportsDB)",
   "teams": [
@@ -162,7 +162,6 @@
     ],
     "F": [
       {
-        "rank": 1,
         "played": 1,
         "w": 1,
         "d": 0,
@@ -170,38 +169,38 @@
         "gf": 5,
         "ga": 1,
         "pts": 3,
-        "nameKo": "스웨덴",
-        "nameEn": "Sweden",
-        "flag": "🇸🇪"
-      },
-      {
-        "rank": 2,
-        "played": 1,
-        "w": 0,
-        "d": 1,
-        "l": 0,
-        "gf": 2,
-        "ga": 2,
-        "pts": 1,
-        "nameKo": "일본",
-        "nameEn": "Japan",
-        "flag": "🇯🇵"
-      },
-      {
-        "rank": 3,
-        "played": 1,
-        "w": 0,
-        "d": 1,
-        "l": 0,
-        "gf": 2,
-        "ga": 2,
-        "pts": 1,
+        "rank": 1,
         "nameKo": "네덜란드",
         "nameEn": "Netherlands",
         "flag": "🇳🇱"
       },
       {
-        "rank": 4,
+        "played": 0,
+        "w": 0,
+        "d": 0,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "pts": 0,
+        "rank": 2,
+        "nameKo": "일본",
+        "nameEn": "Japan",
+        "flag": "🇯🇵"
+      },
+      {
+        "played": 0,
+        "w": 0,
+        "d": 0,
+        "l": 0,
+        "gf": 0,
+        "ga": 0,
+        "pts": 0,
+        "rank": 3,
+        "nameKo": "튀니지",
+        "nameEn": "Tunisia",
+        "flag": "🇹🇳"
+      },
+      {
         "played": 1,
         "w": 0,
         "d": 0,
@@ -209,9 +208,10 @@
         "gf": 1,
         "ga": 5,
         "pts": 0,
-        "nameKo": "튀니지",
-        "nameEn": "Tunisia",
-        "flag": "🇹🇳"
+        "rank": 4,
+        "nameKo": "스웨덴",
+        "nameEn": "Sweden",
+        "flag": "🇸🇪"
       }
     ]
   }
