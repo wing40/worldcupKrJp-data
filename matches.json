@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-07-24T11:08:47Z",
+  "updatedAt": "2026-07-24T11:10:28Z",
   "tournament": "2026 FIFA World Cup",
   "source": "cross-verified by reconcile.py (ESPN + TheSportsDB)",
   "teams": [
@@ -62,11 +62,11 @@
       "group": "F",
       "record": {
         "w": 1,
-        "d": 1,
+        "d": 2,
         "l": 0,
-        "gf": 6,
-        "ga": 2,
-        "pts": 4
+        "gf": 7,
+        "ga": 3,
+        "pts": 5
       },
       "matches": [
         {
@@ -97,10 +97,10 @@
           "opponentFlag": "🇸🇪",
           "kickoffUtc": "2026-06-25T23:00:00Z",
           "venue": "AT&T Stadium, Arlington",
-          "status": "scheduled",
-          "scoreFor": null,
-          "scoreAgainst": null,
-          "result": null
+          "status": "finished",
+          "scoreFor": 1,
+          "scoreAgainst": 1,
+          "result": "D"
         }
       ]
     }
@@ -108,110 +108,110 @@
   "groups": {
     "A": [
       {
-        "rank": 1,
-        "played": 1,
-        "w": 1,
+        "played": 3,
+        "w": 3,
         "d": 0,
         "l": 0,
-        "gf": 2,
+        "gf": 6,
         "ga": 0,
-        "pts": 3,
+        "pts": 9,
+        "rank": 1,
         "nameKo": "멕시코",
         "nameEn": "Mexico",
         "flag": "🇲🇽"
       },
       {
+        "played": 3,
+        "w": 1,
+        "d": 1,
+        "l": 1,
+        "gf": 2,
+        "ga": 3,
+        "pts": 4,
         "rank": 2,
-        "played": 1,
+        "nameKo": "남아공",
+        "nameEn": "South Africa",
+        "flag": "🇿🇦"
+      },
+      {
+        "played": 3,
         "w": 1,
         "d": 0,
-        "l": 0,
+        "l": 2,
         "gf": 2,
-        "ga": 1,
+        "ga": 3,
         "pts": 3,
+        "rank": 3,
         "nameKo": "대한민국",
         "nameEn": "South Korea",
         "flag": "🇰🇷"
       },
       {
-        "rank": 3,
-        "played": 1,
+        "played": 3,
         "w": 0,
-        "d": 0,
-        "l": 1,
-        "gf": 1,
-        "ga": 2,
-        "pts": 0,
+        "d": 1,
+        "l": 2,
+        "gf": 2,
+        "ga": 6,
+        "pts": 1,
+        "rank": 4,
         "nameKo": "체코",
         "nameEn": "Czechia",
         "flag": "🇨🇿"
-      },
-      {
-        "rank": 4,
-        "played": 1,
-        "w": 0,
-        "d": 0,
-        "l": 1,
-        "gf": 0,
-        "ga": 2,
-        "pts": 0,
-        "nameKo": "남아공",
-        "nameEn": "South Africa",
-        "flag": "🇿🇦"
       }
     ],
     "F": [
       {
-        "played": 1,
-        "w": 1,
-        "d": 0,
+        "played": 3,
+        "w": 2,
+        "d": 1,
         "l": 0,
-        "gf": 5,
-        "ga": 1,
-        "pts": 3,
+        "gf": 10,
+        "ga": 4,
+        "pts": 7,
         "rank": 1,
         "nameKo": "네덜란드",
         "nameEn": "Netherlands",
         "flag": "🇳🇱"
       },
       {
-        "played": 0,
-        "w": 0,
-        "d": 0,
+        "played": 3,
+        "w": 1,
+        "d": 2,
         "l": 0,
-        "gf": 0,
-        "ga": 0,
-        "pts": 0,
+        "gf": 7,
+        "ga": 3,
+        "pts": 5,
         "rank": 2,
         "nameKo": "일본",
         "nameEn": "Japan",
         "flag": "🇯🇵"
       },
       {
-        "played": 0,
-        "w": 0,
-        "d": 0,
-        "l": 0,
-        "gf": 0,
-        "ga": 0,
-        "pts": 0,
-        "rank": 3,
-        "nameKo": "튀니지",
-        "nameEn": "Tunisia",
-        "flag": "🇹🇳"
-      },
-      {
-        "played": 1,
-        "w": 0,
-        "d": 0,
+        "played": 3,
+        "w": 1,
+        "d": 1,
         "l": 1,
-        "gf": 1,
-        "ga": 5,
-        "pts": 0,
-        "rank": 4,
+        "gf": 7,
+        "ga": 7,
+        "pts": 4,
+        "rank": 3,
         "nameKo": "스웨덴",
         "nameEn": "Sweden",
         "flag": "🇸🇪"
+      },
+      {
+        "played": 3,
+        "w": 0,
+        "d": 0,
+        "l": 3,
+        "gf": 2,
+        "ga": 12,
+        "pts": 0,
+        "rank": 4,
+        "nameKo": "튀니지",
+        "nameEn": "Tunisia",
+        "flag": "🇹🇳"
       }
     ]
   }
